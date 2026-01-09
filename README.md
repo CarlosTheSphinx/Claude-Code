@@ -4,6 +4,27 @@
 
 This repository contains the complete JSON configuration for **Josie**, an AI-powered inbound receptionist agent for Sphinx Capital, a private real estate lending company. Josie handles incoming calls, qualifies leads, and collects detailed intake information for loan originators.
 
+## 🚀 Quick Start
+
+### For Retell AI Users (RECOMMENDED)
+
+**Use this file**: `config/agents/josie-receptionist-retell-import.json`
+
+This is the production-ready Retell AI configuration. Simply:
+1. Import into Retell dashboard
+2. Update transfer phone number (line 524)
+3. Assign a phone number
+4. Start taking calls!
+
+📖 **Full instructions**: See [RETELL-IMPLEMENTATION-GUIDE.md](RETELL-IMPLEMENTATION-GUIDE.md)
+⚡ **Quick reference**: See [QUICK-REFERENCE.md](QUICK-REFERENCE.md)
+
+### For Documentation/Planning
+
+**Use this file**: `config/agents/josie-receptionist-agent.json`
+
+This is the comprehensive specification document with detailed explanations, fallback behaviors, and implementation notes. Use this to understand the complete system design.
+
 ## Product Lines Supported
 
 ### 1. DSCR (Debt Service Coverage Ratio) Loans
@@ -22,9 +43,14 @@ This repository contains the complete JSON configuration for **Josie**, an AI-po
 Claude-Code/
 ├── config/
 │   └── agents/
-│       └── josie-receptionist-agent.json
-└── README.md
+│       ├── josie-receptionist-agent.json          # Comprehensive specification
+│       └── josie-receptionist-retell-import.json  # Retell AI import file ⭐
+├── README.md                                       # This file - overview
+├── RETELL-IMPLEMENTATION-GUIDE.md                 # Detailed implementation guide
+└── QUICK-REFERENCE.md                             # Quick reference card
 ```
+
+⭐ = **Start here for Retell AI implementation**
 
 ## Configuration File
 
